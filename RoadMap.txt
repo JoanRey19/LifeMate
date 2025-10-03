@@ -1,0 +1,69 @@
+Roadmap Técnico – Proyecto LifeMate
+
+Objetivo
+
+Desarrollar un sistema de gestión de citas médicas con integración de IA para reducir tiempos de espera en hospitales y ofrecer orientación inicial a los pacientes.
+
+Fases del Proyecto y Cronograma
+
+Fase	Duración	Objetivos principales	Entregables
+
+1. Análisis y Diseño	Semana 1 - 4 (Mes 1)	- Definir requerimientos funcionales y no funcionales.
+- Diseñar la arquitectura del sistema.
+- Crear el modelo de base de datos.
+- Crear diagramas UML y flujo del sistema.
+- Diseñar la interfaz inicial (wireframes).	- Documento de requisitos.
+- Modelo ER de base de datos.
+- Diagramas UML.
+- Prototipo de interfaz.
+
+2. Backend e IA Básica	Semana 5 - 8 (Mes 2)	- Implementar API REST con Node.js y Express.
+- Conectar backend con MySQL.
+- Implementar módulo de registro/login y gestión de citas.
+- Integrar chatbot IA básico con TensorFlow o API GPT.
+- Implementar lógica de negocio para el panel administrador.	- Backend funcional conectado a BD.
+- CRUD de usuarios y citas.
+- Chatbot IA inicial.
+- Documentación API.
+
+3. Frontend e Integración Completa	Semana 9 - 12 (Mes 3)	- Desarrollar la interfaz con React.
+- Conectar frontend con backend.
+- Crear módulos de usuario, citas, chatbot y panel de administración.
+- Realizar pruebas unitarias y de integración.
+- Hacer pruebas piloto con usuarios reales.	- Interfaz funcional y conectada.
+- Sistema completo con IA integrada.
+- Resultados de pruebas y retroalimentación.
+
+4. Optimización y Despliegue	Semana 13 - 14 (Opcional)	- Mejorar rendimiento del chatbot.
+- Optimizar seguridad y consultas.
+- Preparar despliegue en producción (servidor o nube).
+- Documentación final del proyecto.	- Sistema desplegado.
+- Manual de usuario.
+- Documentación técnica.
+
+Arquitectura del Sistema
+
+Flujo general:
+
+Usuario → Chatbot IA → Backend (Node.js/Express) → Base de Datos (MySQL)
+                 ↓
+         Gestión de Citas → Panel Admin → Reportes
+
+Módulos Técnicos Principales
+
+Módulo	Descripción	Tecnologías
+
+Registro y Autenticación	Creación de cuentas de usuario y administrador con roles y seguridad (JWT).	Node.js, Express, MySQL
+Gestión de Citas	CRUD de citas: crear, editar, cancelar, ver historial y enviar recordatorios.	Node.js, MySQL
+Chatbot IA Médico	Asistente virtual que responde preguntas básicas de salud y orienta al usuario.	TensorFlow / ChatGPT API
+Panel de Administración	Dashboard con métricas, lista de pacientes, doctores y citas.	React, Chart.js
+Interfaz de Usuario	Portal para pacientes con módulos de citas, historial y chatbot.	React
+
+Responsabilidades del Equipo
+
+Rol	Miembro	Responsabilidades
+
+Analista / Documentación	Eduardo Vallejo	Requisitos, casos de uso, documentación técnica y manuales.
+Backend Developer	Joan Reynoso Zayas	API REST, conexión a BD, lógica de negocio, seguridad.
+Frontend Developer	Eduardo Vallejo	Desarrollo de interfaz React, integración con API.
+Especialista en IA	Jayfri Guerrero	Desarrollo e integración del chatbot IA.-
