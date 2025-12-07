@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@openrouter/ai-sdk-provider": "^1.2.8",
+    "lucide-react": "^0.555.0"
+  }
+}
